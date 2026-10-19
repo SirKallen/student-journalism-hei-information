@@ -1,6 +1,6 @@
 # Student Journalism and the Informational Role of Higher Education Institutions
 
-This repository contains code, prompts, and supporting materials for the study:
+This repository contains code, prompts, and manuscript materials for the study:
 
 **Student Journalism and the Informational Role of Higher Education Institutions: A Rural–Urban Comparative Analysis**
 
@@ -22,41 +22,47 @@ The study uses:
 
 - Soft cosine similarity to evaluate textual distinctiveness
 - LLM-assisted classification for CIN coverage and localness
-- Human validation of LLM classifications
+- Human validation and review of LLM classifications
 - Logistic regression with outlet-clustered standard errors
-- Bootstrap analysis for pairwise textual similarity
+- Equal-sized bootstrap analysis for pairwise textual similarity
 
 ## Repository Contents
 
-- `code/` — scripts used for data processing, classification, statistical analysis, and figure/table generation
-- `prompts/` — LLM prompts, codebooks, and classification instructions
-- `results/` — selected tables, figures, and non-sensitive aggregate outputs
-- `manuscript/` — manuscript or preprint materials
-- `requirements.txt` — software dependencies
+- `code/` — scripts used for institutional matching, textual similarity analysis, LLM-assisted classification, and logistic regression
+- `prompts/` — CIN and locality codebooks, classification prompts, and structured output documentation
+- `manuscript/` — manuscript and related publication materials
 
 ## Data Availability
 
-The underlying article-level dataset is not included in this repository.
+The underlying article-level dataset and article text files are not included in this repository.
 
-The dataset was externally constructed and contains full-text student journalism articles and related metadata. Because these materials cannot be redistributed through this repository, users will need to obtain access to the original data source independently.
+The study uses externally constructed student journalism data containing article text and related metadata. These materials are not redistributed through this repository.
 
-The code in this repository is provided to document the analytical workflow and support methodological transparency.
+Accordingly, this repository is intended to document the analytical and coding workflow rather than provide a fully reproducible data package.
 
 ## Reproducibility
 
-Because the underlying article-level data are not publicly distributed here, the full analysis cannot be reproduced from this repository alone.
+Because the underlying article-level data are not included, the full analysis cannot be reproduced from this repository alone.
 
-However, the repository provides:
+The repository provides:
 
-- data-processing procedures
-- classification code
-- LLM prompt structures
-- coding frameworks
-- statistical analysis scripts
-- figure and table generation procedures
+- institutional matching and rurality classification procedures
+- textual similarity analysis code
+- CIN classification code
+- locality classification code
+- LLM classification prompts
+- CIN and locality codebooks
+- logistic regression scripts
+- bootstrap procedures
+- manuscript documentation
 
-These materials are intended to make the computational workflow as transparent as possible while respecting data-sharing restrictions.
+These materials are intended to make the computational and coding procedures as transparent as possible while respecting data-sharing restrictions.
 
-## Citation
+## Repository Structure
 
-Citation information will be added upon publication.
+```text
+student-journalism-hei-information/
+├── README.md
+├── code/
+├── prompts/
+└── manuscript/
